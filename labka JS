@@ -1,0 +1,34 @@
+<html>
+<body>
+<input type="text" id="input">
+<p id="p01"></p>
+<button type="button" onclick="myfunction">Convert</button>
+<script>
+function myFunction() {
+var message, x;
+message = document.getElementById("p01");
+message.innerHTML = "";
+x = document.getElementById("p01").value;
+try { 
+if(x == "") throw "empty";
+if(isNaN(x)) throw "not a number";
+x = Number(x);
+if(x ==1) throw "I";
+if(x ==2) throw "II";
+if(x ==3) throw "III";
+if(x ==4) throw "IV";
+if(x ==5) throw "V";
+if(x ==6) throw "VI";
+if(x ==7) throw "VII";
+if(x ==8) throw "VIII";
+if(x ==9) throw "IX";
+if(x ==10) throw "X";
+if(x > 10) throw "Input is too high";
+}
+catch(err) {
+message.innerHTML = "lslslsl" + err;
+}
+}
+</script>
+</body>
+</html>
